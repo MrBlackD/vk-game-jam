@@ -1,0 +1,576 @@
+{
+	"name": "Список событий 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 552703694556955,
+					"parameters": {
+						"key": 87
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Спрайт",
+					"sid": 767879163319413,
+					"parameters": {
+						"animation": "\"Attack\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Спрайт",
+					"sid": 682007198696306,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"control": "up"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 530538457737481,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 457354480622863
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Спрайт",
+					"sid": 951797264613575,
+					"parameters": {
+						"animation": "\"Attack\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 709604599134584,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Спрайт",
+					"sid": 432893624074538,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"control": "down"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 441335960052272,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 215948816760908
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Спрайт",
+					"sid": 566264855274405,
+					"parameters": {
+						"animation": "\"Attack\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 103377288540130,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Спрайт",
+					"sid": 219300851574649,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Спрайт",
+					"sid": 666669732153395,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 878451780114614,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 347161328570289
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Спрайт",
+					"sid": 159038908546861,
+					"parameters": {
+						"animation": "\"Attack\""
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 115381731571754,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Спрайт",
+					"sid": 612542399954557,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 601491611663893,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Спрайт",
+					"sid": 266668276816202,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 424980798314975
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 388404128184816
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Спрайт",
+					"sid": 763269945226371,
+					"parameters": {
+						"angle": "0"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Спрайт2",
+					"sid": 265817756180517,
+					"parameters": {
+						"angle": "0"
+					}
+				}
+			],
+			"sid": 605884895358331
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Клавиатура",
+					"sid": 178868107004166,
+					"parameters": {
+						"key": 87
+					}
+				},
+				{
+					"id": "on-key-released",
+					"objectClass": "Клавиатура",
+					"sid": 974729564896135,
+					"parameters": {
+						"key": 83
+					}
+				},
+				{
+					"id": "on-key-released",
+					"objectClass": "Клавиатура",
+					"sid": 208435020580568,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "on-key-released",
+					"objectClass": "Клавиатура",
+					"sid": 169938510930347,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 406119217679553,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 128989204465326,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Спрайт2",
+					"sid": 112579634118629,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "Спрайт.X"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Спрайт2",
+					"sid": 503404865242537,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 958458763949590
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Спрайт2",
+					"sid": 975732493754589,
+					"parameters": {
+						"comparison": 5,
+						"x-co-ordinate": "Спрайт.X"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Спрайт2",
+					"sid": 566729303892383,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 358251198764448
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Спрайт2",
+					"sid": 791064035088938,
+					"parameters": {
+						"comparison": 5,
+						"y-co-ordinate": "Спрайт.Y - Спрайт2.attackRange"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Спрайт2",
+					"sid": 611251438095654,
+					"parameters": {
+						"comparison": 3,
+						"y-co-ordinate": "Спрайт.Y + Спрайт2.attackRange"
+					}
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "Спрайт2",
+					"sid": 101789030077704,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "Спрайт.X + Спрайт2.attackRange"
+					}
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "Спрайт2",
+					"sid": 656599936998599,
+					"parameters": {
+						"comparison": 5,
+						"x-co-ordinate": "Спрайт.X - Спрайт2.attackRange"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт2",
+					"sid": 582750758152884,
+					"parameters": {
+						"animation": "\"Attack\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 372060348413144
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 473652594671621
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт2",
+					"sid": 112403810008683,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 285467270732745
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Спрайт2",
+					"sid": 151799468163250,
+					"parameters": {
+						"animation": "\"Attack\""
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Спрайт2",
+					"sid": 376775358906709,
+					"parameters": {
+						"comparison": 0,
+						"number": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 928248365480354,
+					"parameters": {
+						"animation": "\"Hurt\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 884198745526502
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Спрайт2",
+					"sid": 861968616544615,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "Спрайт.Y - Спрайт2.attackRange"
+					}
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Спрайт2",
+					"sid": 497111854528841,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "Спрайт.Y + Спрайт2.attackRange"
+					}
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "Спрайт2",
+					"sid": 467300510136592,
+					"parameters": {
+						"comparison": 4,
+						"x-co-ordinate": "Спрайт.X + Спрайт2.attackRange"
+					}
+				},
+				{
+					"id": "compare-x",
+					"objectClass": "Спрайт2",
+					"sid": 121816813371383,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "Спрайт.X - Спрайт2.attackRange"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Спрайт2",
+					"sid": 140133508632539,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"object": "Спрайт",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 371451924579666,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-animation-finished",
+					"objectClass": "Спрайт",
+					"sid": 131772133508360
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 104956445341273,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 480207551253198
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 340502409348326,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 860467728791626,
+					"parameters": {
+						"animation": "\"Attack\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Спрайт",
+					"sid": 530947279538052,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 486522594602237
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 599843970142347,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 356252176011223,
+					"parameters": {
+						"animation": "\"Attack\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Спрайт",
+					"sid": 257681736248142,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 270352393891566
+		}
+	],
+	"sid": 287810284500482
+}
