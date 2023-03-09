@@ -425,7 +425,8 @@
 					}
 				}
 			],
-			"sid": 884198745526502
+			"sid": 884198745526502,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -521,9 +522,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Спрайт",
-					"sid": 860467728791626,
+					"sid": 650158148654186,
 					"parameters": {
-						"animation": "\"Attack\"",
+						"animation": "\"Attack3\"",
 						"from": "beginning"
 					}
 				},
@@ -554,9 +555,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Спрайт",
-					"sid": 356252176011223,
+					"sid": 910025087626096,
 					"parameters": {
-						"animation": "\"Attack\"",
+						"animation": "\"Attack3\"",
 						"from": "beginning"
 					}
 				},
@@ -570,6 +571,73 @@
 				}
 			],
 			"sid": 270352393891566
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт",
+					"sid": 683798385771123,
+					"parameters": {
+						"object": "Спрайт2"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Спрайт",
+					"sid": 204192117984938,
+					"parameters": {
+						"animation": "\"Attack3\""
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Спрайт",
+					"sid": 639999916471284,
+					"parameters": {
+						"comparison": 0,
+						"number": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт2",
+					"sid": 803180199014175
+				}
+			],
+			"sid": 128144398883628
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 460479671406608,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 702169680523529,
+					"parameters": {
+						"object-to-create": "Спрайт2",
+						"layer": "0",
+						"x": "РасширеннаяСлучайность.Classic2d(0, LayoutWidth)",
+						"y": "РасширеннаяСлучайность.Classic2d(0, LayoutHeight)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 767253335397438
 		}
 	],
 	"sid": 287810284500482

@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "AdvancedRandom",
+			"name": "Расширенная случайность",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Клавиатура",
 			"author": "Scirra",
@@ -62,7 +69,8 @@
 			"Спрайт",
 			"Клавиатура",
 			"game_background_",
-			"Спрайт2"
+			"Спрайт2",
+			"РасширеннаяСлучайность"
 		],
 		"subfolders": []
 	},
